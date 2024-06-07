@@ -1,1 +1,63 @@
 # Discord-information-crawling-and-publishing
+## 项目介绍
+    本项目是针对Discord聊天平台进行非官方机器人注入式的信息抓取与发布
+ 
+    由于加入官方机器人需要discord服务器管理者或是频道管理者的许可，
+    使用webdriver和selenium为核心，以模拟点击的形式去对指定的服务器内指定的频道信息进行抓取与发布
+
+## 环境依赖
+    本项目使用python311版,请运行前保证有python环境
+    运行pip install selenium 配置核心库
+    安装了 Chrome 浏览器
+    请根据自己的Chrome版本前往https://developer.chrome.com/docs/chromedriver/downloads 下载对应的Driver并解压安装好
+
+## 目录结构描述
+    抓取信息服务代码：discord信息抓取.py
+    指定信息发布代码：discord信息发布.py
+    ├── config.py                   //  配置
+    ├── discord信息抓取.py           // 信息抓取
+    ├── discord信息发布.py          //  信息发布
+    ├── Readme.md                   //  help
+
+## 使用说明
+### 无论是信息发布还是信息抓取你都需要进行的配置
+    更新config以匹配你的 Chrome 用户配置文件目录和 Chromedriver 可执行文件路径
+    和你要进行信息抓取或信息发布的服务器内的对应频道
+    也可以在代码首部进行配置
+    ```python
+        #将
+        server_name = config.server_name
+        channel_name = config.channel_name
+         #改为
+        server_name = "giggity的服务器"
+        channel_name = "test3"
+    ```
+### 配置完成后
+#### 信息抓取
+- 运行脚本：python discord信息抓取.py / python discord信息发布.py
+    - 一旦脚本运行，它将在 Chrome 浏览器窗口中打开 Discord, 注意运行前请先关闭你配置的浏览器
+        -    你可以在你配置的google浏览器中提前登录，这样运行脚本就无需再此登录
+        -    如果需要，手动登录 Discord。
+-   机器人将等待你登录并导航到指定的服务器和频道。
+    -   一旦机器人检测到你已成功登录并导航到指定的服务器和频道，它将开始监控消息。
+-   消息将记录到名为 "messages.txt" 的文本文件中，该文件位于与脚本相同的目录中。
+    -   你可以通过修改脚本中的 open() 函数来自定义消息记录的文件名和路径。
+-   要停止机器人，只需关闭 Chrome 浏览器窗口。
+#### 信息发布
+- 配置你要指定发布的信息
+    ```python
+        message = "------模拟点击信息发送------"
+    ```
+- python discord信息发布.py
+ - 一旦脚本运行，它将在 Chrome 浏览器窗口中打开 Discord, 注意运行前请先关闭你配置的浏览器
+    -    你可以在你配置的google浏览器中提前登录，这样运行脚本就无需再此登录
+    -    如果需要，手动登录 Discord。
+-   机器人将等待你登录并导航到指定的服务器和频道。
+    -   一旦机器人检测到你已成功登录并导航到指定的服务器和频道，它会等待3秒后发送消息
+    -   发送消息后3秒会关闭网页
+
+### 脚本除了登录外全自动无需操作,如果提前登录过也不需要登录操作
+
+####                                         项目及文档制作人：陈俊艺
+####                                         工作日期：2024/6/3 - 2024/6/6
+####                                         文档完成时间：2024/6/7
