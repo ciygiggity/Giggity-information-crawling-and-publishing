@@ -51,7 +51,7 @@
 ### 配置完成后
 #### 信息抓取
 
-- 运行脚本：python discord信息抓取.py
+- 运行脚本：python discordCrawling.py
  - 一旦脚本运行，它将在 Chrome 浏览器窗口中打开 Discord, 注意运行前请先关闭你配置的浏览器
     -    你可以在你配置的google浏览器中提前登录，这样运行脚本就无需再此登录
     -    如果需要，手动登录 Discord。
