@@ -1,4 +1,4 @@
-# Discord-information-crawling-and-publishing
+# Suimit-information-crawling-and-publishing
 ## 项目介绍
     本项目是针对Discord聊天平台进行非官方机器人注入式的信息抓取与发布
  
