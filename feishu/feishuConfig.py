@@ -6,7 +6,7 @@ def get_chrome_options():
     chrome_options = webdriver.ChromeOptions()
     #在浏览器的地址栏中输入chrome://version命令获取个人资料路径
     chrome_options.add_argument("user-data-dir=C:\\Users\\liyufeng\\AppData\\Local\\Google\\Chrome\\User Data")
-    chrome_options.add_argument("--profile-directory=Profile 2")
+    chrome_options.add_argument("--profile-directory=Default")
     return chrome_options
 
 def get_chrome_service():

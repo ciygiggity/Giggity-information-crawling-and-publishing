@@ -11,14 +11,14 @@
     请根据自己的Chrome版本前往https://developer.chrome.com/docs/chromedriver/downloads 下载对应的Driver并解压安装好
 
 ## 目录结构描述
+    ├──discord
+        ├── discordConfig.py           //  discord配置        
+        ├── discordCrawling.py           // discord信息抓取
+        ├── discordPublishing.py          //  discord信息发布
     ├──feishu
-        ├── feishu信息抓取.py           // feishu信息抓取
-        ├── feishu信息发布.py          //  feishu信息发布
         ├── feishuConfig.py           //  feishu配置
-    ├──discord        
-        ├── discord信息抓取.py           // discord信息抓取
-        ├── discord信息发布.py          //  discord信息发布
-        ├── discordConfig.py           //  discord配置
+        ├── feishuCrawling.py           // feishu信息抓取
+        ├── feishuPublishing.py          //  feishu信息发布                   
     ├── README.md                   //  help
 
 ## 使用说明

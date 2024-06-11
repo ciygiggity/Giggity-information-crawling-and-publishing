@@ -4,7 +4,7 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
-import feishu.feishuConfig as feishuConfig  # 导入配置文件
+import feishuConfig as feishuConfig  # 导入配置文件
 
 # 从配置文件获取Chrome选项和服务
 chrome_options = feishuConfig.get_chrome_options()

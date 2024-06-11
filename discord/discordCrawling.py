@@ -4,7 +4,7 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
-import discord.discordConfig as discordConfig  # 导入配置文件
+import discordConfig as discordConfig  # 导入配置文件
 
 # 从配置文件获取Chrome选项和服务
 chrome_options = discordConfig.get_chrome_options()
