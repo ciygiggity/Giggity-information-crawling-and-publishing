@@ -51,7 +51,7 @@
 ### 配置完成后
 #### 信息抓取
 
-- 运行脚本：python discordCrawling.py
+- 运行脚本：python discordc.py
  - 一旦脚本运行，它将在 Chrome 浏览器窗口中打开 Discord, 注意运行前请先关闭你配置的浏览器
     -    你可以在你配置的google浏览器中提前登录，这样运行脚本就无需再此登录
     -    如果需要，手动登录 Discord。
@@ -62,14 +62,14 @@
     -   要停止机器人，只需关闭 Chrome 浏览器窗口。
 
 - 新增feishu消息抓取功能，基本原理和运行情况与discord相同
-    - 运行脚本：python feishu信息抓取.py
+    - 运行脚本：python feishuCrawling.py.py
 
 #### 信息发布
 - 配置你要指定发布的信息
     ```python
         message = "------模拟点击信息发送------"
     ```
-- 运行脚本：python discord信息发布.py
+- 运行脚本：python discordPublishing.py
  - 一旦脚本运行，它将在 Chrome 浏览器窗口中打开 Discord, 注意运行前请先关闭你配置的浏览器
     -    你可以在你配置的google浏览器中提前登录，这样运行脚本就无需再此登录
     -    如果需要，手动登录 Discord。
@@ -78,12 +78,11 @@
     -   发送消息后3秒会关闭网页
 
 - 新增feishu消息发布功能，基本原理和运行情况与discord相同
-    - 运行脚本：python feishu信息发布.py
+    - 运行脚本：python feishuPublishing.py
 
 
 
 ### 脚本除了登录外全自动无需操作,如果提前登录过也不需要登录操作
-
 
 
 ## 项目版本

@@ -68,7 +68,7 @@ try:
             exit()
 
         # 打开文件用于写入消息
-        with open("messagesTest3.txt", "a", encoding="utf-8") as file:
+        with open("messagesDiscord.txt", "a", encoding="utf-8") as file:
             time.sleep(3)
             print(f"开始监测频道: {channel_name}")
 

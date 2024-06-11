@@ -13,8 +13,9 @@ chrome_service = feishuConfig.get_chrome_service()
 group_name = feishuConfig.group_name
 
 # 启动浏览器
-driver = webdriver.Chrome(service=chrome_service, options=chrome_options)
-
+#driver = webdriver.Chrome(service=chrome_service, options=chrome_options)
+# 双开启动项
+driver = webdriver.Chrome()
 try:
     # 打开飞书登录页面
     driver.get("https://accounts.feishu.cn/accounts/page/login?app_id=1&no_trap=1&redirect_uri=https%3A%2F%2Fwww.feishu.cn%2Fmessenger%2F")
@@ -56,7 +57,7 @@ try:
             exit()
 
         # 打开文件用于写入消息
-        with open("feishu_messages.txt", "a", encoding="utf-8") as file:
+        with open("messagesFeishu.txt", "a", encoding="utf-8") as file:
            # 等待页面加载
             print("开始监测群组")
             time.sleep(3)
