@@ -4,14 +4,14 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
-import config  # 导入配置文件
+import discord.discordConfig as discordConfig  # 导入配置文件
 
 # 从配置文件获取Chrome选项和服务
-chrome_options = config.get_chrome_options()
-chrome_service = config.get_chrome_service()
+chrome_options = discordConfig.get_chrome_options()
+chrome_service = discordConfig.get_chrome_service()
 # 获取服务器和频道名称
-server_name = config.server_name
-channel_name = config.channel_name
+server_name = discordConfig.server_name
+channel_name = discordConfig.channel_name
 
 # 启动浏览器
 driver = webdriver.Chrome(service=chrome_service, options=chrome_options)
