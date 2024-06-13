@@ -1,4 +1,4 @@
-# Suimit-information-crawling-and-publishing
+# Giggity-information-crawling-and-publishing
 ## 项目介绍
     本项目是针对聊天平台进行非官方机器人注入式的信息抓取与发布
     由于加入官方机器人需要服务器管理者或是频道管理者的许可，
